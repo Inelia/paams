@@ -8,13 +8,13 @@ class Pages extends Controller
 
 	public function index()
 	{
-		$data = ['title' => "Bienvenue sur l'index"];
+		$data = ['title' => "bubble"];
 		$this->view('pages/index', $data);
 	}
 
 	public function contact()
 	{
-		$data = ['title' => 'Contactez-nous'];
+		$data = ['title' => 'Nous contacter'];
 		$this->view('pages/contact', $data);
 	}
 }
