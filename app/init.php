@@ -1,6 +1,6 @@
 <?php
 
-require_once 'config/localConfig.php';
+require_once 'config/config.php';
 
 // Charge la librairie
 

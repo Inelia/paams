@@ -8,7 +8,7 @@ class Pages extends Controller
 
 	public function index()
 	{
-		$data = ['title' => "bubble"];
+		$data = ['title' => "index"];
 		$this->view('pages/index', $data);
 	}
 
