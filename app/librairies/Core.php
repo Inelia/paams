@@ -3,8 +3,8 @@
 
 /**
  * Classe => noyau de l'app
- * Créée les urls et charge le controleur de base
- * Formate les urls => controllers/methode/params
+ * Créée les urls et charge le contrôleur de base
+ * Formate les urls => controllers/method/params
  */
 
 class Core
@@ -22,12 +22,12 @@ class Core
 
 		// on recherche si le controller correspondant au 1er paramettre existe
 		if (!is_null($url)) {
-			if (file_exists('./app/controllers/' . ucwords($url[0]) . '.php')) {
+			if (file_exists('../app/controllers/' . ucwords($url[0]) . '.php')) {
 				$this->currentController = ucwords($url[0]);
 				unset($url[0]);
 			}
 		}
-		require_once './app/controllers/' . $this->currentController . '.php';
+		require_once '../app/controllers/' . $this->currentController . '.php';
 
 
 		// on instancie
