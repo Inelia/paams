@@ -4,7 +4,7 @@
 	Options +FollowSymlinks -MultiViews
 	# Options -Multiviews
 	RewriteEngine On 
-	RewriteBase /framework/public
+	RewriteBase /paams/public
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
