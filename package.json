@@ -1,0 +1,20 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "Project stage<br> avec Agniel Marie, Béziat Jéremy et Lauffenburger Sergei <br>Date de stage le 22/07/22 au 22/09/22",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/stylesheets/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Inelia/paams.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Inelia/paams/issues"
+  },
+  "homepage": "https://github.com/Inelia/paams#readme"
+}

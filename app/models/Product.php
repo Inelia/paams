@@ -98,7 +98,7 @@ class Product
     }
   }
   /**
-   * Eneleve un produit de la boutique
+   * Enlève un produit de la boutique
    *
    * @param integer $id
    * @return boolean
