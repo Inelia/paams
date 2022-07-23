@@ -1,10 +1,10 @@
 # il faut que la reécriture d'url soit activé sur le serveur
 # completer RewriteBase
 <IfModule mod_rewrite.c>
-	Options +FollowSymlinks -MultiViews
-	# Options -Multiviews
+	# Options +FollowSymlinks -MultiViews
+	Options -Multiviews
 	RewriteEngine On 
-	RewriteBase /framework/public
+	RewriteBase /paams/public
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]

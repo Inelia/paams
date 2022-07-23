@@ -10,7 +10,7 @@
 
 	<!-- fontAwesome, google foont, etc -->
 
-	<link rel="stylesheet" type="text/css" href="<?= URLROOT ?>css/style.css">
+	<link rel="stylesheet" type="text/css" href="<?= URLROOT ?>/css/style.css">
 </head>
 
 <body>
