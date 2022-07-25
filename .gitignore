@@ -1,3 +1,4 @@
 config.php
 localConfig.php
 init.php
+app/views/exemple.php

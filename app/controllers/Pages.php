@@ -17,4 +17,10 @@ class Pages extends Controller
 		$data = ['title' => 'Nous contacter'];
 		$this->view('pages/contact', $data);
 	}
+
+	public function welcome()
+	{
+		$data = ['title' => 'Bienvenue'];
+		$this->view('pages/welcome', $data);
+	}
 }
