@@ -415,11 +415,11 @@ p {
   width: 1px;
 }
 
-.main-home {
+.main_home {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column-reverse;
   justify-content: center;
+  align-items: center;
 }
 
 a {
@@ -436,14 +436,14 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 90%;
 }
 
 .acc_text {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 90%;
 }
 
 .text {
@@ -455,17 +455,17 @@ a:hover {
 
 .card-accueil {
   width: 70%;
-  height: 80px;
+  height: 90px;
   text-align: center;
-  opacity: 0.8;
-  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
+  overflow: hidden;
 }
 
 .urban {
-  height: 120px;
+  height: 190px;
   background: rgba(0, 0, 0, 0.305) url("../img/urban.jpg");
   background-size: cover;
   background-position: center;
@@ -474,11 +474,11 @@ a:hover {
 }
 .urban:hover {
   background-blend-mode: lighten;
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 .beach {
-  height: 120px;
+  height: 190px;
   background: rgba(0, 0, 0, 0.305) url("../img/water-sea2.jpeg");
   background-size: cover;
   background-position: center;
@@ -487,7 +487,7 @@ a:hover {
 }
 .beach:hover {
   background-blend-mode: lighten;
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 .kids {
@@ -499,7 +499,7 @@ a:hover {
 }
 .kids:hover {
   background-blend-mode: lighten;
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 .accesoires {
@@ -511,7 +511,7 @@ a:hover {
 }
 .accesoires:hover {
   background-blend-mode: lighten;
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 .createur {
@@ -523,7 +523,7 @@ a:hover {
 }
 .createur:hover {
   background-blend-mode: lighten;
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 .backstage {
@@ -532,76 +532,36 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-blend-mode: darken;
+  overflow: hidden;
 }
 .backstage:hover {
   background-blend-mode: lighten;
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 .contact {
-  width: 40%;
+  width: 70%;
+  height: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
   background: rgba(0, 0, 0, 0.305) url("../img/contact.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-blend-mode: darken;
-  border-radius: 20px;
-  border: 2px solid #fff;
   box-shadow: 0px 15px 20px rgba(46, 168, 229, 0.4);
-}
-
-.btn-contact {
-  position: absolute;
-  width: 200px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  color: #fff;
-  text-decoration: none;
-}
-
-.btn-contact svg,
-.btn-contact svg rect {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  fill: transparent;
-  stroke: #fff;
-  stroke-dasharray: 200 60;
-  stroke-dashoffset: 0;
 }
 
 @media screen and (min-width: 640px) {
   a {
     font-size: 1.5em;
   }
-  .contact {
-    width: 40%;
-  }
   .text {
     font-size: 1.2em;
-  }
-  .urban {
-    height: 170px;
-  }
-  .beach {
-    height: 170px;
-  }
-  .kids {
-    height: 120px;
-  }
-  .accesoires {
-    height: 120px;
-  }
-  .createur {
-    height: 120px;
-  }
-  .backstage {
-    height: 120px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -614,32 +574,33 @@ a:hover {
   .text {
     font-size: 1.4em;
   }
-  .urban {
-    height: 170px;
-  }
-  .beach {
-    height: 170px;
-  }
 }
 @media screen and (min-width: 1024px) {
   a {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   .main_home {
-    width: 100%;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 50% 50%;
   }
   .acc_container {
+    width: 100%;
     display: grid;
-    grid-template-columns: [first] 200px [line2] 200px;
-    gap: 25px;
-    row-gap: 0px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px 90px 90px;
+    column-gap: 25px;
+    row-gap: 15px;
+    padding: 20px;
+  }
+  .logo-accueil {
+    position: relative;
+    align-self: flex-start;
   }
   .acc_text {
     font-size: 0.8em;
+    width: 100%;
+    padding: 20px;
   }
   .urban {
     width: 100%;
@@ -666,45 +627,12 @@ a:hover {
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
   }
   .contact {
-    width: 110%;
-    position: relative;
-    left: 110px;
+    width: 100%;
+    grid-column: 1/3;
     overflow: hidden;
   }
   .contact:hover {
     transform: scale(0.8);
-  }
-  .btn-contact {
-    position: absolute;
-    width: 200px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    color: #fff;
-    text-decoration: none;
-  }
-  .btn-contact svg,
-.btn-contact svg rect {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    fill: transparent;
-  }
-  .btn-contact svg rect {
-    stroke: #00e2ff;
-    stroke-width: 4;
-    transition: 2s;
-    stroke-dasharray: 60 200;
-    stroke-dashoffset: 300;
-  }
-  .btn-contact:hover svg rect {
-    stroke: #fff;
-    stroke-dasharray: 200 60;
-    stroke-dashoffset: 0;
   }
 }
 .main_background {
