@@ -28,10 +28,10 @@
       </div>
       
       <div class="acc_text">
-      
-      <p class="text">
-        <img class="logo-accueil" src="/public/img/PaamS_logo_Noir_mode.png" alt="Logo_PaamS">
+        <img class="logo-accueil" src="../img/PaamS_logo_Noir_mode.png" alt="Logo_PaamS">
         <br />
+      <p class="text">
+        
 
         Le mélange des genres, un principe qui caractérise "Nos" créations.
         La rencontre de deux innovateurs, André et Patrice, l'un issus 
