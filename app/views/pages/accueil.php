@@ -3,31 +3,38 @@
 
     </header>
     <main class="main_home">
-      <div class="acc_container">
+      <div class="accueil__container">
         <figure class="card-accueil urban ">
-          <a href="#">Urban</a>
+          <img class ="img__card" src="../img/urban.jpg" alt="">
+          <figcaption class="primary__caption"><a href="#">Urban</a></figcaption>
         </figure>
         <figure class="card-accueil beach">
-          <a href="#">Beach</a>
+          <img class ="img__card" src="../img/water-sea2.jpeg" alt="">
+          <figcaption class="primary__caption"><a href="#">Beach</a></figcaption>
         </figure>
         <figure class="card-accueil kids ">
-        <a href="#">Kids</a>
+          <img class ="img__card" src="../img/kids.jpg" alt="">
+          <figcaption class="caption__card"><a href="#">Kids</a></figcaption>
         </figure>
         <figure class="card-accueil accesoires ">
-          <a href="#">Accesoires</a>
+          <img class ="img__card" src="../img/accesorios.jpeg" alt="">
+          <figcaption class="caption__card"><a href="#">Accesoires</a></figcaption>
         </figure>
         <figure class="card-accueil createur ">
-          <a  href="#">Createur</a>
+          <img class ="img__card" src="../img/createurs.jpg" alt="">
+          <figcaption class="caption__card"><a href="#">CRÉATEUR</a></figcaption>
         </figure>
         <figure class="card-accueil backstage ">
-          <a href="#">Backstage</a>
+          <img class ="img__card" src="../img/backstage.webp" alt="">
+          <figcaption class="caption__card"><a href="#">Backstage</a></figcaption>
         </figure>
         <figure class=" contact">
-          <a class="btn-contact" href="/contact">Contact</a>
+          <img class="img__card" src="../img/contact.jpg" alt="fond__marine">
+          <figcaption class="contact__caption">Contact</figcaption>
         </figure>
       </div>
       
-      <div class="acc_text">
+      <div class="accueil_text">
         <img class="logo-accueil" src="../img/PaamS_logo_Noir_mode.png" alt="Logo_PaamS">
         <br />
       <p class="text">

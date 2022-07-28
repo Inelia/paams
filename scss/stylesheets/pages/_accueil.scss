@@ -3,7 +3,9 @@
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
-  
+  // background-color: rgb(219, 219, 219);
+  // background-color: rgba(0, 0, 0, 0.64);
+  background-color: #ececec;
 
 }
 a{
@@ -17,16 +19,16 @@ a{
 }
 
 
-.acc_container{
+.accueil__container{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 100%;
   
 }
 // div pour parametrer le text
-.acc_text{
+.accueil_text{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,6 +38,8 @@ a{
   
 }
 .logo-accueil{
+  position: relative;
+  top: 20px;
   width: 50%;
   
 }
@@ -54,108 +58,72 @@ a{
   width: 70%;
   height: 90px;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: rgba(0, 0, 0, 0.74);
+  margin-top: 0;
   text-transform: uppercase;
   overflow:hidden;
   
 
 }
+.primary__caption{
+  position: relative;
+  top: -110px;
+  background-color: transparent;
+  color:#fff;
+  text-align: center;
+}
+.caption__card{
+  position: relative;
+  top: -70px;
+  background-color: transparent;
+  color:#fff;
+  text-align: center;
+}
+.contact__caption{
+  position: relative;
+  top: -50px;
+  background-color: transparent;
+  color:#fff;
+  text-align: center;
+}
+.img__card{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  background-blend-mode: darken;
+  filter: brightness(80%);
+  transition: 200ms;
+  
+  
+  &:hover{
+    background-blend-mode: darken;
+    transform:scale(1.1);
+    transition: 500ms;
+    
+    
+  }
+}
 
 //parametrer chaque img cards
 .urban{
+  width: 70%;
   height: 190px;
-  background:  rgba(0, 0, 0, 0.305) url('../img/urban.jpg'); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-blend-mode: darken;
   
-  &:hover{
-    background-blend-mode: lighten;
-    transform:scale(1.3);
-    
-    
-  }
+  
 }
 
+
 .beach{
+  width: 70%;
   height: 190px;
-  background: rgba(0, 0, 0, 0.305) url('../img/water-sea2.jpeg'); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-blend-mode: darken;
   
-  &:hover{
-    background-blend-mode: lighten;
-    transform:scale(1.3);
-    
-  }
 }
-.kids{
-  background: rgba(0, 0, 0, 0.305) url('../img/kids.jpg'); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-blend-mode: darken;
-  &:hover{
-    background-blend-mode: lighten;
-    transform:scale(1.3);
-  }
-}
-.accesoires{
-  background: rgba(0, 0, 0, 0.305) url('../img/accesorios.jpeg'); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-blend-mode: darken;
-  &:hover{
-    background-blend-mode: lighten;
-    transform:scale(1.3);
-  }
-}
-.createur{
-  background: rgba(0, 0, 0, 0.305) url('../img/createurs.jpg'); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-blend-mode: darken;
-  &:hover{
-    background-blend-mode: lighten;
-    transform:scale(1.3);
-  }
-}
-.backstage{
-  background: rgba(0, 0, 0, 0.305) url('../img/backstage.webp'); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-blend-mode: darken;
-  overflow: hidden;
-  &:hover{
-    background-blend-mode: lighten;
-    transform:scale(1.3);
-    
-  }
-}
+
 .contact{
   width: 70%;
   height: 50px;
-  text-transform: uppercase;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.305) url('../img/contact.jpg'); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-blend-mode: darken;
-  box-shadow: 0px 15px 20px rgba(46, 168, 229, 0.4);
-  
+  margin: 0;
 }
 
 
@@ -176,11 +144,9 @@ a{
 }
 @media screen and (min-width: 768px){
   a{
-    font-size: 2em;
-  }
-  .btn-contact{
     font-size: 1.5em;
   }
+  
   .text{
     font-size: 1.2em;
   }
@@ -188,31 +154,31 @@ a{
   
 }
 
-@media screen and (min-width: 1024px){
+
+@media (min-width: 1024px){
   a{
     font-size: 1.2em;
   }
   .main_home{
     
     min-height: 100vh;
-    // display: flex;
-    // align-items: center;
-    // justify-content: space-evenly;
-    // flex-direction: row;
     display: grid;
     grid-template-columns: 50% 50%;
     
   }
-  .acc_container{
+  .card-accueil{
+    margin: 0;
+  }
+  // parametre les position de tout les images
+  .accueil__container{
     width: 100%;
-    // display: grid;
-    // grid-template-columns: [first] 100% [line2] 100%;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 45% 45%;
     grid-template-rows: 200px 90px 90px;
     column-gap: 25px;
     row-gap: 15px;
-    padding: 20px;
+    padding: 70px;
+    overflow:hidden;
     
     
     
@@ -221,7 +187,7 @@ a{
     width: 50%;
   }
   
-  .acc_text{
+  .accueil_text{
     font-size: 0.7em;
     width: 100%;
     padding: 20px;
@@ -229,41 +195,35 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
   }
   .urban{
     width: 100%;
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    
+    
   }
   .beach{
     width: 100%;
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+   
   }
   .kids{
     width: 100%;
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
   }
   .accesoires{
     width: 100%;
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
     
   }
   .createur{
     width: 100%;
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
   }
   .backstage{
     width: 100%;
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
   }
   .contact{
     width: 100%;
-    grid-column: 1/3 ;
+    grid-column: 1/3 ; // paramtrer la position de la card contact
+
     
-    
-    overflow:hidden;
-    &:hover{
-      transform:scale(0.8);
-    }
   }
   
 
