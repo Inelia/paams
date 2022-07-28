@@ -2,4 +2,4 @@ config.php
 localConfig.php
 init.php
 app/views/exemple.php
-style.css.map
+public/css/style.css.map

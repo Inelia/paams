@@ -18,15 +18,6 @@ $data['error_message'] = "";
       <label for="password">Mot de passe</label>
     </div>
     <input class="btn_login" type="submit" value="Se connecter">
-    <!-- <div class="form-control">
-      <input type="email" name="email" >
-    </div>
-    <div>
-      <input type="password" name="password" placeholder="Votre mot de passe">
-      <span class="invalid-feedback"><?= "tatam" ?></span>
-    </div>
-
-      <input type="submit" value="Se connecter">
     <!-- Si on veut mettre une image dans le bouton => changer l'<input /> en <button></button> -->
     <p class="text_login">Vous n'avez pas encore de compte ?
       <a href="<?= URLROOT . '/users/register'; ?>" class="link_login">Inscrivez-vous</a>
