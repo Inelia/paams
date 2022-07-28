@@ -16,7 +16,8 @@
 @import "components/card", "components/button";
 
 // 6. Page-specific styles
-@import "pages/welcome", "pages/accueil", "pages/home";
+
+@import "pages/welcome",  "pages/accueil", "pages/home", "pages/login";
 
 // 7. Themes
 @import "themes/default";
