@@ -23,4 +23,16 @@ class Pages extends Controller
 		$data = ['title' => 'Bienvenue'];
 		$this->view('pages/welcome', $data);
 	}
+
+	public function login()
+	{
+		$data = ['title' => 'Connexion'];
+		$this->view('users/login', $data);
+	}
+
+	public function register()
+	{
+		$data = ['title' => 'register'];
+		$this->view('users/register', $data);
+	}
 }
