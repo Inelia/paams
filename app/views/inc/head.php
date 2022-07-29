@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
 	<meta charset="utf-8">
@@ -10,7 +10,7 @@
 
 	<!-- fontAwesome, google foont, etc -->
 
-	<link rel="stylesheet" type="text/css" href="<?= URLROOT ?>css/style.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost/paams/public/css/style.css">
 </head>
 
 <body>

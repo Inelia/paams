@@ -1,0 +1,14 @@
+.register {
+  background: url("../img/background.webp") center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 470px) {
+  .main_register {
+    height: 100vh;
+  }
+}
