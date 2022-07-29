@@ -1,14 +1,5 @@
 <?php
 
-
-// appli root
-
-// echo __FILE__.'<br>';
-
-// echo dirname(__FILE__).'<br>';
-
-// echo dirname(dirname(__FILE__)).'<br>';
-
 define('APPROOT', dirname(dirname(__FILE__)));
 
 // url root
