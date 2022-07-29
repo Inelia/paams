@@ -1,8 +1,1 @@
-<IfModule mod_rewrite.c>
-	Options -Multiviews
-	RewriteEngine On 
-	RewriteBase /paams/public/
-	RewriteCond %{REQUEST_FILENAME} !-d
-	RewriteCond %{REQUEST_FILENAME} !-f
-	RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
-</IfModule>
+Options -Indexes
