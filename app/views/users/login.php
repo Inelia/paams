@@ -1,6 +1,4 @@
-<?php require_once APPROOT . '/views/inc/head.php'; 
-$data['error_message'] = "";
-?>
+<?php require_once APPROOT . '/views/inc/head.php'; ?>
 <main class="login">
   <img class="logo" src="../img/PaamS_logo_Blanc_mode.png" alt="logo_paams">
   <form action="<?= URLROOT . '/users/login' ?>" method="post" class="form" name="login">
@@ -22,4 +20,4 @@ $data['error_message'] = "";
   </form>
 </main>
 
-<?php require_once APPROOT . '/views/inc/end_page.php'; 
+<?php require_once APPROOT . '/views/inc/end_page.php';
