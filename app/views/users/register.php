@@ -1,31 +1,31 @@
 <?php require_once APPROOT . '/views/inc/head.php';
 $data['error_message'] = "";
 ?>
-<main class="main_register">
-<img class="register_logo" src="../img/PaamS_logo_Blanc_mode.png" alt="logo_paams">
-  <form action="<?= URLROOT . '/users/register' ?>" method="post" class="form_register" name="register">
-  <h1 class="title_login">Inscription</h1>
+<main class="register">
+<img class="logo" src="../img/PaamS_logo_Blanc_mode.png" alt="logo_paams">
+  <form action="<?= URLROOT . '/users/register' ?>" method="post" class="form" name="register">
+  <h1 class="form__title">Inscription</h1>
     <?= $data['error_message'] == ""?"": '<span class="flash">'. $data['error_message'] .'</span>'; ?>
-    <div class="form-civilite">
-    <label class="label-civilite">Civilité *</label>
+    <div class="form-control--civility">
+    <label>Civilité *</label>
     </div>
-    <div class="radio_register">
-      <input class="input_radio_men" type="radio" id="monsieur" name="madame">
-      <label class="label_radio" for="monsieur">M</label>
-      <input class="input-radio-right" type="radio" id="madame" name="madame">
-      <label class="label_radio" for="madame">Mme</label>
-    </div>
-    <div class="form-control">
-      <input id="name" type="text" name="name" required>
-      <label for="name">Nom *</label>
+    <div class="form-control--radio">
+      <input class="form__radio" type="radio" id="monsieur" name="civility" value="M">
+      <label class="form__radio-label" for="monsieur">M</label>
+      <input class="form__radio" type="radio" id="madame" name="civility" value="Mme">
+      <label class="form__radio-label" for="madame">Mme</label>
     </div>
     <div class="form-control">
-      <input id="first-name" type="text" name="name" required>
-      <label for="first-name">Prénom *</label>
+      <input id="last_name" type="text" name="last_name" required>
+      <label for="last_name">Nom *</label>
     </div>
     <div class="form-control">
-      <input type="date" id="birthday" name="birthday">
-      <label for="birthday">Date de naissance</label>
+      <input id="first_name" type="text" name="first_name" required>
+      <label for="first_name">Prénom *</label>
+    </div>
+    <div class="form-control">
+      <input type="date" id="birthdate" name="birthdate">
+      <label for="birthdate">Date de naissance</label>
     </div>
     <div class="form-control">
       <input id="email" type="email" required name="email" />
@@ -39,9 +39,9 @@ $data['error_message'] = "";
       <input id="password_confirmation" type="password" name="password_confirmation" required>
       <label for="password_confirmation">Confirmation du mot de passe *</label>
     </div>
-    <input class="btn_login" type="submit" value="S'inscrire">
-      <p class="text_login">Vous avez déjà un compte ?
-        <a href="<?= URLROOT . '/users/login'; ?>" class="link_login">Connectez-vous</a>
+    <input class="btn--submit" type="submit" value="S'inscrire">
+      <p class="form__text">Vous avez déjà un compte ?
+        <a href="<?= URLROOT . '/users/login'; ?>" class="form__link">Connectez-vous</a>
       </p>
   </form>
 </main>
