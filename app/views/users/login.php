@@ -2,10 +2,8 @@
 $data['error_message'] = "";
 ?>
 <main class="main_login">
+  <img class="login_logo" src="../img/PaamS_logo_Blanc_mode.png" alt="logo_paams">
   <form action="<?= URLROOT . '/users/login' ?>" method="post" class="form_login" name="login">
-  <!-- <p>Merci de remplir tout les champs pour valider votre connexion</p> -->
-
-  <!-- <form class="form_login"> -->
 
     <h1 class="title_login">Connexion</h1>
 <?= $data['error_message'] == ""?"": '<span class="flash">'. $data['error_message'] .'</span>'; ?>
