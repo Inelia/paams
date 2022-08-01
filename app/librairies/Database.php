@@ -49,7 +49,7 @@ class Database {
 		$this -> stmt = $this -> dbh -> prepare($sql);
 	}
 
-	// secure data (bindvalue) (bind => relier)
+	// secure data (bindValue) (bind => relier)
 
 	public function bind($param,$value,$type=null){
 

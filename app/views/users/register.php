@@ -1,6 +1,4 @@
-<?php require_once APPROOT . '/views/inc/head.php';
-$data['error_message'] = "";
-?>
+<?php require_once APPROOT . '/views/inc/head.php'; ?>
 <main class="register">
 <img class="logo" src="../img/PaamS_logo_Blanc_mode.png" alt="logo_paams">
   <form action="<?= URLROOT . '/users/register' ?>" method="post" class="form" name="register">
