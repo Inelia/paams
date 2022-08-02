@@ -1,232 +1,386 @@
-.main_home{
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center;
-  // background-color: rgb(219, 219, 219);
-  // background-color: rgba(0, 0, 0, 0.64);
-  background-color: #ececec;
-
-}
-a{
-  text-decoration: none;
-  color: #fff;
-  
-  &:hover{
-    color: #fff;
-    text-decoration: none;
-  }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+.main-home-container{
+  height: 100vh;
+}
+/* configuration du div principal  */
 
-.accueil__container{
+.main__home {
   display: flex;
   flex-direction: column;
-  // justify-content: center;
-  align-items: center;
-  width: 100%;
-  
-}
-// div pour parametrer le text
-.accueil_text{
-  display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  width: 90%;
-  
   
 }
-.logo-accueil{
-  position: relative;
-  top: 20px;
-  width: 50%;
-  
+/* configuration du div contenant le logo et le text */
+.text__home__container{
+  padding: 48px 48px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.text{
-  width: 80%;
+.logo__container{
+  display: flex;
+  justify-content: center;
+ }
+ /* configuration logo img */
+.logo-image-home{
+  width: 51%;
+  margin-bottom: 10px;
+}
+/* configuration du text (p) principal */
+.home-text{
+  font-size: 0.8rem;
   
   text-align: justify;
-  font-size: 0.5em;
-  padding: 20px;
+}
+/* configuration du div contenant les images */
+.home__container{
+  padding: 50px 50px;
+  max-width: 1200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  display: contents;
+}
+/* configuration du card cotentant les deux images  prinpal*/
+.two__principal__card{
+  width: 81%;
+  margin: 10px;
+  height: 200px;
   
-  
+  overflow: hidden;
+  position: relative;
+  float: left;
+  display: inline-block;
+  cursor: pointer;
 }
 
-// pour parametrer le cards accueil
-.card-accueil{
-  width: 70%;
-  height: 90px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.74);
-  margin-top: 0;
-  text-transform: uppercase;
-  overflow:hidden;
+/* configuration du card cotentant le des images */
+.card-home{
+  width: 81%;
+  margin: 10px;
+  height: 120px;
   
+  overflow: hidden;
+  position: relative;
+  float: left;
+  display: inline-block;
+  cursor: pointer;
+}
 
+/* configuration bottom card contact*/
+.bottom{
+  height: 68px;
 }
-.primary__caption{
-  position: relative;
-  top: -110px;
-  background-color: transparent;
-  color:#fff;
-  text-align: center;
-}
-.caption__card{
-  position: relative;
-  top: -70px;
-  background-color: transparent;
-  color:#fff;
-  text-align: center;
-}
-.contact__caption{
-  position: relative;
-  top: -50px;
-  background-color: transparent;
-  color:#fff;
-  text-align: center;
-}
-.img__card{
-  width: 100%;
+
+  /* configuration div cotentant des images de fond */
+.overlay-img{
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  background-color: rgba(0, 0, 0, 0.295);
   background-blend-mode: darken;
-  filter: brightness(80%);
-  transition: 200ms;
-  
-  
-  &:hover{
-    background-blend-mode: darken;
-    transform:scale(1.1);
-    transition: 500ms;
-    
-    
-  }
 }
 
-//parametrer chaque img cards
+/* class pour positioner des div au droit */
+.right {float: right !important;}
+
+
+
+
+/* Les differents images du accueil */
+
 .urban{
-  width: 70%;
-  height: 190px;
-  
-  
+  background-image: url('../img/urban.jpg');
 }
-
-
 .beach{
-  width: 70%;
-  height: 190px;
-  
+  background-image: url('../img/water-sea2.jpeg');
 }
-
+.kids{
+  background-image: url('../img/kids.jpg');
+}
+.accessories{
+  background-image: url('../img/accesorios.jpeg');
+}
+.creator{
+  background-image: url('../img/createurs-coupe.jpg');
+}
+.backstage{
+  background-image: url('../img/backstage.webp');
+}
 .contact{
-  width: 70%;
-  height: 50px;
-  margin: 0;
+  background-image: url('../img/contact.jpg');
 }
 
+/* configuration des liens */
 
-
-// Area Responsives
-
-@media screen and (min-width: 640px){
-  a{
-    font-size: 1.5em;
-  }
-  
-  .text{
-    font-size: 1.2em;
-  }
-  
- 
-  
-}
-@media screen and (min-width: 768px){
-  a{
-    font-size: 1.5em;
-  }
-  
-  .text{
-    font-size: 1.2em;
-  }
- 
+.link-center{
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
   
 }
 
+.position{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-@media (min-width: 1024px){
-  a{
-    font-size: 1.2em;
-  }
-  .main_home{
-    
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    
-  }
-  .card-accueil{
-    margin: 0;
-  }
-  // parametre les position de tout les images
-  .accueil__container{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 45% 45%;
-    grid-template-rows: 200px 90px 90px;
-    column-gap: 25px;
-    row-gap: 15px;
-    padding: 70px;
-    overflow:hidden;
-    
-    
-    
-  }
-  .logo-accueil{
-    width: 50%;
-  }
-  
-  .accueil_text{
-    font-size: 0.7em;
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-  }
-  .urban{
-    width: 100%;
-    
-    
-  }
-  .beach{
-    width: 100%;
-   
-  }
-  .kids{
-    width: 100%;
-  }
-  .accesoires{
-    width: 100%;
-    
-  }
-  .createur{
-    width: 100%;
-  }
-  .backstage{
-    width: 100%;
-  }
-  .contact{
-    width: 100%;
-    grid-column: 1/3 ; // paramtrer la position de la card contact
+/*configuration du transition pour le deux premier images */
+.two__principal__card:hover .overlay-img, .two__principal__card:focus .overlay-img {
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.two__principal__card:hover .overlay-img:before, .two__principal__card:focus .overlay-img:before{
+  display: block;
+}
+.two__principal__card:hover .links-page-home, .two__principal__card:focus .links-page-home{
+  display: block;
+}
 
-    
+/* hover link*/
+// .two__principal__card:hover .link-center, .two__principal__card:focus .link-center{
+//   display: none;
+// }
+
+
+/* configuration du transition pour le  rest des images */
+.card-home:hover .stl-img, .card-home:focus .stl-img {
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.card-home:hover .stl-img:before, .card-home:focus .stl-img:before{
+  display: block;
+}
+.card-home:hover .links-page-home, .card-home:focus .links-page-home{
+  display: block;
+}
+
+/*hover links */
+.card-home:hover .link, .card-home:focus .link{
+  display: none;
+}
+
+/* leger overlay color pour les images */
+.stl-img::before{
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+
+/*****************************************************************/
+/******MEDIA-Q*************MEDIA-Q*************************/
+/*****************************************************************/
+
+
+@media (min-width: 420px){
+  .text__home__container{
+    width: 100%;
+  }
+  .home-text{
+    font-size: 0.9rem;
   }
   
 
+}
+
+@media (min-width: 580px){
+  .text__home__container{
+    width: 98%;
+    
+  } 
+}
+@media (min-width: 640px){
+  .text__home__container{
+    width: 96%;
+    
+  } 
+}
+@media (min-width: 680px){
+
+  .text__home__container{
+    width: 100%;
+    
+  }
+  /* configuration div contenant le text (p)*/
+  .home-text{
+    font-size: 1.2rem;
+  }
   
+
+  /* div contenant tous le card */
+  .home__container{
+    display: block;
+    width: 720px;
+    margin: 0px;
+  }
+
+  /* configuration du card principal */
+  .two__principal__card{
+    width: 46%;
+  }
   
+
+  /* configuration des card contenant rest des images */
+  .card-home{
+    width: 46%;
+    height: 96px;
+  }
+  
+  /*configuration bottom contact card*/
+  .bottom{
+    width: 97%;
+    height: 64px;
+  }
+}
+
+@media (min-width: 718px){
+  .text__home__container{
+    width: 95%;
+    
+  }
+}
+
+@media (min-width: 768px){
+
+  /* configuration du div contenant le logo et le text */
+  .text__home__container{
+    width: 91%;
+    
+  }
+
+  /* configuration div contenant le text (p)*/
+  .home-text{
+    font-size: 1.2rem;
+  }
+  
+
+  /* div contenant tous le card */
+  .home__container{
+    display: block;
+    width: 720px;
+    margin: 0px;
+  }
+
+  /* configuration du card principal */
+  .two__principal__card{
+    width: 46%;
+  }
+  
+
+  /* configuration des card contenant rest des images */
+  .card-home{
+    width: 46%;
+    height: 96px;
+  }
+  
+  /*configuration bottom contact card*/
+  .bottom{
+    width: 97%;
+    height: 64px;
+  }
+}
+@media (min-width: 810px){
+  .text__home__container{
+    width: 86%;
+    
+  }
+}
+@media (min-width: 860px){
+  .text__home__container{
+    width: 81%;
+    
+  }
+}
+@media (min-width: 920px){
+  .text__home__container{
+    width: 77%;
+    
+  }
+}
+
+
+@media (min-width: 1020px) {
+  .main__home{
+    flex-direction: row-reverse ;
+    height: 100vh;
+  }
+  .home__container{
+    display: block;
+    width: 500px;
+    padding: 0px;
+    margin-left: 20px;
+    
+  }
+  .text__home__container{
+    width: 44%;
+    padding: 0px;
+  }
+  .home-text{
+    font-size: 1.1rem;
+  }
+  .two__principal__card{
+    width: 46%;
+  }
+  .card-home{
+    width: 46%;
+    height: 96px;
+  }
+  .bottom{
+    width: 96%;
+    height: 64px;
+  }
+}
+@media (min-width: 1200px) {
+  
+  .home__container{
+    display: block;
+    width: 570px;
+    padding: 0px;
+    margin-left: 20px;
+    
+  }
+  // .text__home__container{
+  //   width: 44%;
+  //   padding: 0px;
+  // }
+  // .home-text{
+  //   font-size: 1.1rem;
+  // }
+  // .two__principal__card{
+  //   width: 46%;
+  // }
+  // .card-home{
+  //   width: 46%;
+  //   height: 96px;
+  // }
+  .bottom{
+    width: 97%;
+    height: 64px;
+  }
 }
