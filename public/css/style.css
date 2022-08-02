@@ -416,6 +416,7 @@ p {
   width: 1px;
 }
 
+
 .main_background {
   background: url("../img/background.webp") center no-repeat;
   background-size: cover;
@@ -787,30 +788,8 @@ a .btn_welcome {
     width: 96%;
     height: 64px;
   }
-}
-@media (min-width: 1200px) {
-  .home__container {
-    display: block;
-    width: 570px;
-    padding: 0px;
-    margin-left: 20px;
-  }
-  .bottom {
-    width: 97%;
-    height: 64px;
-  }
-}
-.main_login {
-  background: url("../img/background.webp") center no-repeat;
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
-.form_login {
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -819,6 +798,24 @@ a .btn_welcome {
   background-color: rgba(0, 0, 0, 0.64);
   backdrop-filter: blur(4px);
   border-radius: 5px;
+}
+
+.form__title {
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form__text {
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.form__link {
+  font-size: 1rem;
+  color: rgb(0, 174, 255);
 }
 
 .form-control {
@@ -837,11 +834,6 @@ a .btn_welcome {
   border-bottom: 2px #fff solid;
 }
 
-.form-control input:focus,
-.form-control input:valid {
-  outline: 0;
-}
-
 .form-control label {
   position: absolute;
   top: 0px;
@@ -852,6 +844,124 @@ a .btn_welcome {
   font-size: 18px;
   min-width: 5px;
   transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus,
+.form-control input:valid {
+  outline: 0;
+}
+
+.form-control label,
+.form-control--civility label {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+.form-control--civility {
+  align-self: flex-start;
+  margin: 0 0 10px 18px;
+  color: white;
+}
+
+.form-control--radio {
+  align-self: flex-start;
+  color: #fff;
+  margin: 0 0 30px 18px;
+}
+
+.form__radio:not(:first-child) {
+  margin-left: 15px;
+}
+
+.label-radio {
+  font-size: 1rem;
+}
+
+::-webkit-calendar-picker-indicator {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.btn--submit {
+  background-color: rgb(255, 255, 255);
+  margin: 10px 0;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn--link {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.459);
+  backdrop-filter: blur(4px);
+  padding: 10px 30px;
+  border: 2.5px solid #fff;
+  font-size: 1rem;
+}
+
+@media (min-width: 1200px) {
+  .home__container {
+    display: block;
+    width: 570px;
+    padding: 0px;
+    margin-left: 20px;
+  }
+  .bottom {
+    width: 97%;
+    height: 64px;
+  .btn--link {
+    transition: 500ms;
+    font-size: 1.1rem;
+  }
+  .btn--link:hover {
+    transform: scale(1.05);
+    transition: 500ms;
+  }
+}
+
+.logo {
+  margin-top: 30px;
+  opacity: 80%;
+  height: 120px;
+}
+
+.welcome .logo {
+  height: 150px;
+}
+
+@media (min-width: 1200px) {
+  .welcome .logo {
+    height: 300px;
+  }
+}
+.welcome {
+  background: url("../img/background.webp") center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1200px) {
+  .welcome_logo {
+    height: 350px;
+    margin-left: 40px;
+  }
+}
+.login {
+  background: url("../img/background.webp") center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form-control input:focus + label,
@@ -865,13 +975,6 @@ input:-webkit-autofill:focus {
   transition: background-color 600000s 0s, color 600000s 0s;
 }
 
-.title_login {
-  color: #fff;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
 .flash {
   background: rgb(255, 46, 46);
   color: #fff;
@@ -881,24 +984,19 @@ input:-webkit-autofill:focus {
   margin-bottom: 10px;
 }
 
-.btn_login {
-  background-color: rgb(255, 255, 255);
-  margin: 10px 0;
-  font-size: 1rem;
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
+.register {
+  background: url("../img/background.webp") center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.text_login {
-  font-size: 1rem;
-  text-align: center;
-  color: #fff;
-}
-
-.link_login {
-  font-size: 1rem;
-  color: rgb(0, 174, 255);
+@media (min-width: 470px) {
+  .main_register {
+    height: 100vh;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

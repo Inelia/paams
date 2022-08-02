@@ -1,0 +1,15 @@
+.logo {
+  margin-top: 30px;
+  opacity: 80%;
+  height: 120px;
+}
+
+.welcome .logo {
+  height: 150px;
+}
+
+@media (min-width: 1200px) {
+  .welcome .logo {
+    height: 300px;
+  }
+}
