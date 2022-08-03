@@ -21,6 +21,7 @@
   padding: 48px 48px;
   margin-left: auto;
   margin-right: auto;
+  
 }
 .logo__container{
   display: flex;
@@ -55,7 +56,7 @@
   
   overflow: hidden;
   position: relative;
-  float: left;
+  // float: left;
   display: inline-block;
   cursor: pointer;
 }
@@ -68,7 +69,7 @@
   
   overflow: hidden;
   position: relative;
-  float: left;
+  // float: left;
   display: inline-block;
   cursor: pointer;
 }
@@ -96,7 +97,16 @@
 /* class pour positioner des div au droit */
 .right {float: right !important;}
 
+.img-layer{
+  opacity: 0%;
 
+  
+}
+.figcaption-position{
+  position: absolute;
+  
+  color: white;
+}
 
 
 /* Les differents images du accueil */
@@ -131,6 +141,8 @@
   text-align: center;
   font-size: 1.5rem;
   text-transform: uppercase;
+  position: relative;
+  // left: 529px;
   
 }
 
@@ -141,57 +153,16 @@
 }
 
 /*configuration du transition pour le deux premier images */
-.two__principal__card:hover .overlay-img, .two__principal__card:focus .overlay-img {
+.card-home:hover .overlay-img, .two__principal__card:hover .overlay-img,
+ .card-home:hover .overlay-img, .two__principal__card:focus .overlay-img {
   -ms-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -webkit-transform: scale(1.2);
   -o-transform: scale(1.2);
   transform: scale(1.2);
 }
-.two__principal__card:hover .overlay-img:before, .two__principal__card:focus .overlay-img:before{
-  display: block;
-}
-.two__principal__card:hover .links-page-home, .two__principal__card:focus .links-page-home{
-  display: block;
-}
-
-/* hover link*/
-// .two__principal__card:hover .link-center, .two__principal__card:focus .link-center{
-//   display: none;
-// }
 
 
-/* configuration du transition pour le  rest des images */
-.card-home:hover .stl-img, .card-home:focus .stl-img {
-  -ms-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2);
-}
-.card-home:hover .stl-img:before, .card-home:focus .stl-img:before{
-  display: block;
-}
-.card-home:hover .links-page-home, .card-home:focus .links-page-home{
-  display: block;
-}
-
-/*hover links */
-.card-home:hover .link, .card-home:focus .link{
-  display: none;
-}
-
-/* leger overlay color pour les images */
-.stl-img::before{
-  content: "";
-  display: none;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: transparent;
-}
 
 /*****************************************************************/
 /******MEDIA-Q*************MEDIA-Q*************************/
@@ -365,20 +336,7 @@
     margin-left: 20px;
     
   }
-  // .text__home__container{
-  //   width: 44%;
-  //   padding: 0px;
-  // }
-  // .home-text{
-  //   font-size: 1.1rem;
-  // }
-  // .two__principal__card{
-  //   width: 46%;
-  // }
-  // .card-home{
-  //   width: 46%;
-  //   height: 96px;
-  // }
+  
   .bottom{
     width: 97%;
     height: 64px;

@@ -3,7 +3,7 @@
     <div class="main__home">
       <div class="text__home__container ">
         <figure class="logo__container ">
-          <img class="logo-image-home" src="../img/PaamS_logo_Noir_mode.png" alt="Logo PaamS">
+          <a href="index""><img class="logo-image-home" src="../img/PaamS_logo_Noir_mode.png" alt="Logo PaamS"></a>
         </figure>
         
       <p class="home-text">
@@ -23,60 +23,63 @@
         
     
         <div class="two__principal__card ">
-          <div class="overlay-img urban position">
-            <a class="link-center" href="#Urban">Urban</a>
-            <a class="links-page-home" href="#"></a>
-          </div>
+          <figure class="overlay-img urban position">
+            
+            <a href="index"><img class="img-layer" src="../img/urban.jpg" alt="city"></a>
+            <figcaption class="figcaption-position "><a class="link-center" href="index">URBAN</a></figcaption>
+          </figure>
+          
         
         </div>
     
         <div class=" two__principal__card right ">
-          <div class="overlay-img  beach position">
-            <a class="link-center" href="#beach">Beach</a>
-            <a class="links-page-home" href="#"></a>
-          </div>
+          <figure class="overlay-img  beach position">
+          <a href="#beach"><img class="img-layer" src="../img/water-sea2.jpeg" alt="Water of the sea"></a>
+            <figcaption class="figcaption-position "><a class="link-center" href="#beach">Beach</a></figcaption>
+            
+          </figure>
         
         </div>
     
         <div class="card-home ">
-          <div class="overlay-img kids position">
-            <a class="link-center" href="#kids">Kids</a>
-            <a class="links-page-home" href="#"></a>
-          </div>
-        
+          <figure class="overlay-img  kids position">
+              <a href="#Kids"><img class="img-layer" src="../img/kids.jpg" alt="Girl playing in the water"></a>
+            <figcaption class="figcaption-position "><a class="link-center" href="#beach">KIDS</a></figcaption>
+            
+          </figure>
         </div>
     
         <div class="card-home right ">
 
-          <div class="overlay-img accessories position">
-            <a class="link-center" href="#accessories">Accessories</a>
-            <a class="links-page-home" href="#"></a>
-          </div>
-          
+          <figure class="overlay-img  accessories position">
+            <a href="#accessories"><img class="img-layer" src="../img/accesorios.jpeg" alt="Hat and glasses on the sand"></a>
+            <figcaption class="figcaption-position "><a class="link-center" href="#beach">ACCESOIRES</a></figcaption>
+            
+          </figure>
         
         </div>
   
         <div class="card-home">
-          <div class="overlay-img creator position">
-            <a class="link-center" href="#creator">CrÉateur</a>
-            <a class="links-page-home" href="#"></a>
-          </div>
+          <figure class="overlay-img creator position">
+            <a href="#creator"><img class="img-layer" src="../img/createurs.jpg" alt="Paam's Creators"></a>
+            <figcaption class="figcaption-position"><a class="link-center" href="#creator">CrÉateur</a></figcaption>
+          </figure>
         
         </div>
     
         <div class="card-home right">
-          <div class="overlay-img backstage position">
-            <a class="link-center" href="#backstage">Backstage</a>
-            <a class="links-page-home" href="#"></a>
-          </div>
+          <figure class="overlay-img backstage position">
+            <a href="#backstage"><img class="img-layer" src="../img/urban.jpg" alt="Backstage scene" ></a>
+            <figcaption class="figcaption-position "><a class="link-center" href="#backstage">Backstage</a></figcaption>
+          </figure>
         
         </div>
     
         <div class="card-home bottom">
-          <div class="overlay-img contact position">
-            <a class="link-center" href="#contact">Contact</a>
-            <a class="links-page-home" href="#"></a>
-          </div>
+          <figure class="overlay-img contact position">
+            <a href="#contact"><img class="img-layer" src="../img/urban.jpg" alt="undersea"></a>
+            <figcaption class="figcaption-position "><a class="link-center" href="#contact">Contact</a></figcaption>
+          </figure>
         
         </div>
     </div>

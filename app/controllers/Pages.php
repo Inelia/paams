@@ -27,6 +27,7 @@ class Pages extends Controller
 	{
 		$data = ['title' => 'Accueil'];
 		$this->view('pages/accueil', $data);
+	}	
 
 	public function login()
 	{

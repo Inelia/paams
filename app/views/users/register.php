@@ -1,7 +1,7 @@
 <?php require_once APPROOT . '/views/inc/head.php'; ?>
 <main class="register">
 <img class="logo" src="../img/PaamS_logo_Blanc_mode.png" alt="logo_paams">
-  <form action="<?= URLROOT . '/users/register' ?>" method="post" class="form" name="register">
+<form method="post" class="form" name="register">
   <h1 class="form__title">Inscription</h1>
     <?= $data['error_message'] == ""?"": '<span class="flash">'. $data['error_message'] .'</span>'; ?>
     <div class="form-control--civility">

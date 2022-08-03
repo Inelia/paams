@@ -4,7 +4,7 @@ define('APPROOT', dirname(dirname(__FILE__)));
 
 // url root
 
-define('URLROOT', '/public');
+define('URLROOT', '/paams/public');
 
 // site title
 
@@ -14,5 +14,5 @@ define('SITENAME', 'Paams - Boutique');
 
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'paams');
-define('DB_USER', 'marie');
-define('DB_PASSWORD', 'root');
+define('DB_USER', 'root');
+define('DB_PASSWORD', '');
