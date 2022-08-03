@@ -21,7 +21,7 @@ class User
     if ($this->db->rowCount() > 0) return true;
     else return false;
   }
-  public function comparePasswordWithDB($email, $password)
+  public function login($email, $password)
   {
     $this->db->query("SELECT * FROM Users WHERE email = :email");
     $this->db->bind(':email', $email);

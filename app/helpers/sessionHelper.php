@@ -7,7 +7,7 @@
  */
 function isLoggedIn()
 {
-  if (isset($_SESSION['user_id'])) return true;
+  if (isset($_SESSION['user_first_name'])) return true;
   else return false;
 }
 
@@ -18,6 +18,6 @@ function isLoggedIn()
  */
 function isAdmin()
 {
-  if (isset($_SESSION['user_id']) and $_SESSION['user_role'] == 1) return true;
+  if (isLoggedIn() and $_SESSION['user_role'] == 1) return true;
   else return false;
 }
