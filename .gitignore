@@ -3,3 +3,4 @@ localConfig.php
 init.php
 app/views/exemple.php
 public/css/style.css.map
+public/css/style.css
