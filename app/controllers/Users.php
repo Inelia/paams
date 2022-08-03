@@ -4,6 +4,7 @@ class Users extends Controller
 {
   public function __construct()
   {
+
     $this->userModel = $this->model('User');
   }
   /**
@@ -68,6 +69,9 @@ class Users extends Controller
    */
   public function login()
   {
+    if (isLoggedIn()) {
+      redirect('pages/index');
+    }
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       $data = [
         'title' => "Se connecter",
@@ -77,13 +81,16 @@ class Users extends Controller
       ];
       if (empty($data['email']) or empty($data['password'])) {
         $data['error_message'] = "Merci de compléter tous les  champs";
-      } else if (!$this->userModel->findUserByEmail($data['email']) or !$this->userModel->comparePasswordWithDB($data['email'], $data['password'])) {
+      } else if (!$this->userModel->findUserByEmail($data['email']) or !$this->userModel->login($data['email'], $data['password'])) {
         // si l'email n'est pas dans la base de données OU le mot de passe ne corresponds pas avec celui de la base de données
         $data['error_message'] = "Un des champs est incorrecte";
-      }
-      if (empty($data['error_message'])) {
-        $loggedInUser = $this->userModel->comparePasswordWithDB($data['email'], $data['password']);
-        $this->createUserSession($loggedInUser);
+      } else {
+        $loggedInUser = $this->userModel->login($data['email'], $data['password']);
+
+        if (empty($data['error_message'])) {
+          $this->createUserSession($loggedInUser);
+          redirect('pages/index');
+        }
       }
     } else {
       $data = [
@@ -102,10 +109,10 @@ class Users extends Controller
    */
   public function createUserSession($user)
   {
-    $_SESSION['user_id'] = $user->id;
+    $_SESSION['user_id'] = $user->user_id;
     $_SESSION['user_email'] = $user->email;
     $_SESSION['user_first_name'] = $user->first_name;
-    redirect('pages/index');
+    $_SESSION['user_role'] = $user->role;
   }
 
   public function logout()

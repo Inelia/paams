@@ -5,6 +5,7 @@ define('APPROOT', dirname(dirname(__FILE__)));
 // url root
 
 define('URLROOT', '/public');
+define('IMGROOT', '/public/img');
 
 // site title
 
